@@ -3,7 +3,7 @@ import Draw from './Draw';
 export const App = () => {
   return (
     <>
-      <Draw />
+      {/* <Draw /> */}
       <Button />
     </>
   );
