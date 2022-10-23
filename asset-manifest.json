@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/simplescreenrecorder/static/css/main.ce388ba7.css",
-    "main.js": "/simplescreenrecorder/static/js/main.cc941cc8.js",
-    "static/js/787.6b7abe35.chunk.js": "/simplescreenrecorder/static/js/787.6b7abe35.chunk.js",
-    "index.html": "/simplescreenrecorder/index.html",
-    "main.ce388ba7.css.map": "/simplescreenrecorder/static/css/main.ce388ba7.css.map",
-    "main.cc941cc8.js.map": "/simplescreenrecorder/static/js/main.cc941cc8.js.map",
-    "787.6b7abe35.chunk.js.map": "/simplescreenrecorder/static/js/787.6b7abe35.chunk.js.map"
+    "main.css": "/static/css/main.ce388ba7.css",
+    "main.js": "/static/js/main.2e14a7a5.js",
+    "static/js/787.6b7abe35.chunk.js": "/static/js/787.6b7abe35.chunk.js",
+    "index.html": "/index.html",
+    "main.ce388ba7.css.map": "/static/css/main.ce388ba7.css.map",
+    "main.2e14a7a5.js.map": "/static/js/main.2e14a7a5.js.map",
+    "787.6b7abe35.chunk.js.map": "/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce388ba7.css",
-    "static/js/main.cc941cc8.js"
+    "static/js/main.2e14a7a5.js"
   ]
 }
