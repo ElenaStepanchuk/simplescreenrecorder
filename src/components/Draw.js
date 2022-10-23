@@ -1,13 +1,5 @@
-const canvas = document.getElementById('test');
-const ctx = canvas.getContext('2d');
-
-// class DrawLine {
-//   constructor(ctx, x, y) {
-//     this.ctx = ctx;
-//     this.x = x;
-//     this.x = y;
-//   }
-// }
+// const canvas = document.getElementById('test');
+// const ctx = canvas.getContext('2d');
 
 // const Draw = event => {
 //   let pointsX = [];
@@ -35,82 +27,108 @@ const ctx = canvas.getContext('2d');
 // };
 // export default Draw;
 
-function drawLine(ctx, line) {
-  const { start, end, lineWidth = 3, strokeStyle = '#FF0000' } = line;
+// function drawLine(ctx, line) {
+//   const { start, end, lineWidth = 3, strokeStyle = '#FF0000' } = line;
 
-  if (!start || !end) {
-    throw new Error('Start or end of line not defined.');
-  }
+//   if (!start || !end) {
+//     throw new Error('Start or end of line not defined.');
+//   }
 
-  ctx.beginPath();
-  ctx.moveTo(start.x, start.y);
-  ctx.lineTo(end.x, end.y);
-  ctx.lineWidth = lineWidth;
-  ctx.strokeStyle = strokeStyle;
-  ctx.stroke();
-}
+//   ctx.beginPath();
+//   ctx.moveTo(start.x, start.y);
+//   ctx.lineTo(end.x, end.y);
+//   ctx.lineWidth = lineWidth;
+//   ctx.strokeStyle = strokeStyle;
+//   ctx.stroke();
+// }
 
-const mouse = {
-  isPressed: false,
-  click: null,
-  current: null,
-};
+// const mouse = {
+//   isPressed: false,
+//   click: null,
+//   current: null,
+// };
 
-const clearCanvas = ctx => {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-};
+// const clearCanvas = ctx => {
+//   ctx.clearRect(0, 0, canvas.width, canvas.height);
+// };
 
-const lines = [];
+// const lines = [];
 
-const draw = () => {
-  clearCanvas(ctx);
-  lines.forEach(function (line) {
-    drawLine(ctx, line);
-  });
-};
+// const draw = () => {
+//   clearCanvas(ctx);
+//   lines.forEach(function (line) {
+//     drawLine(ctx, line);
+//   });
+// };
 
-const getMousePosition = (event, element) => {
-  let position = {
-    x: event.clientX - element.offsetLeft,
-    y: event.clientY - element.offsetTop,
-  };
-  return position;
-};
+// const getMousePosition = (event, element) => {
+//   let position = {
+//     x: event.clientX - element.offsetLeft,
+//     y: event.clientY - element.offsetTop,
+//   };
+//   return position;
+// };
 
-const handleClickMouse = e => {
-  mouse.isPressed = true;
-  mouse.click = getMousePosition(e, canvas);
+// const handleClickMouse = e => {
+//   mouse.isPressed = true;
+//   mouse.click = getMousePosition(e, canvas);
 
-  const line = {
-    start: mouse.click,
-    end: mouse.click,
-  };
-  lines.push(line);
-  // drawLine(ctx, line);
-  draw();
-};
+//   const line = {
+//     start: mouse.click,
+//     end: mouse.click,
+//   };
+//   lines.push(line);
+//   draw();
+// };
 
-const handleUpMouse = () => {
-  mouse.isPressed = false;
-};
+// const handleUpMouse = () => {
+//   mouse.isPressed = false;
+// };
 
-const handleMoveMouse = e => {
-  mouse.current = getMousePosition(e, canvas);
-  if (mouse.isPressed) {
-    let line = {
-      start: mouse.click,
-      end: mouse.current,
-    };
-    lines.pop();
-    lines.push(line);
-    // clearCanvas(ctx);
-    // drawLine(ctx, line);
-    draw();
-  }
-};
+// const handleMoveMouse = e => {
+//   mouse.current = getMousePosition(e, canvas);
+//   if (mouse.isPressed) {
+//     let line = {
+//       start: mouse.click,
+//       end: mouse.current,
+//     };
+//     lines.pop();
+//     lines.push(line);
+//     draw();
+//   }
+// };
 
-canvas.addEventListener('mousedown', handleClickMouse);
+// canvas.addEventListener('mousedown', handleClickMouse);
 
-canvas.addEventListener('mouseup', handleUpMouse);
+// canvas.addEventListener('mouseup', handleUpMouse);
 
-canvas.addEventListener('mousemove', handleMoveMouse);
+// canvas.addEventListener('mousemove', handleMoveMouse);
+
+// <>
+//   <canvas
+//     id="test"
+//     width="1200"
+//     height="800"
+//     style={{ border: '1px solid #ff0000' }}
+//     ref={this.setLineCanvasRef}
+//     onClick={this.handleClick}
+//     onMouseMove={this.mouseMove}
+//     onContextMenu={this.contextMenu}
+//   ></canvas>
+//   <button
+//     type="button"
+//     style={{
+//       display: 'block',
+//       fontSize: 30,
+//       marginTop: 20,
+//       marginLeft: 'auto',
+//       marginRight: 'auto',
+//       padding: 10,
+//       color: '#010101',
+//       border: '1px solid #FF0000',
+//     }}
+//     onClick={this.handleCollapse}
+//   >
+//     collapse lines
+//   </button>
+// </>;

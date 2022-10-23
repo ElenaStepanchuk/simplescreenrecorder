@@ -1,10 +1,6 @@
-import Button from './Button';
-import Draw from './Draw';
+import Canvas from './Canvas';
+import './style.css';
+
 export const App = () => {
-  return (
-    <>
-      {/* <Draw /> */}
-      <Button />
-    </>
-  );
+  return <Canvas width="1200" height="800" />;
 };
