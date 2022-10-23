@@ -29,10 +29,7 @@ class Line {
     ctx.lineTo(this.end.x, this.end.y);
     ctx.stroke();
   }
-  //
-  changeColor(ctx) {
-    return (ctx.strokeStyle = this.strokeStyle);
-  }
+
   scalePoint(point, center, percent) {
     if (point.hasScale()) {
       const scaleX =
